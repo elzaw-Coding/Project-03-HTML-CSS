@@ -846,6 +846,8 @@ a {
 }
 @media(max-width: 991px) {
     .about .container .about_content .image {
+        width: 100%;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1557,7 +1559,7 @@ a {
 }
 @media(max-width: 767px) {
     .contact .container form {
-        width: 250px;
+        width: 230px;
         max-width: 100%;
         flex-direction: column;
         gap: 10px;
