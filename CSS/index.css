@@ -626,19 +626,13 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-@media(max-width: 767px){
-    .Properties .container .special_Heading_nav .text p{
-        width: 100%;
-        max-width: 100%;
-    }
-}
 @media(max-width: 767px) {
     .Properties .container .special_Heading_nav .text {
         flex-direction: column;
         justify-content: flex-start;
     }
     .Properties .container .special_Heading_nav .text p {
-        margin-left: 15px;
+        padding-left: 15px;
     }
 }
 .Properties .container .special_Heading_nav a {
