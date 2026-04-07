@@ -606,9 +606,6 @@ a {
     font-size: 20px;
     margin-bottom: 100px;
 }
-.Properties .special_Heading_nav p {
-    white-space: wrap;
-}
 .Properties .container {
     background-color: var(--secound-section-color);
     padding: 40px 15px;
@@ -628,6 +625,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media(max-width: 767px){
+    .Properties .container .special_Heading_nav .text p{
+        width: 100%;
+        max-width: 100%;
+    }
 }
 @media(max-width: 767px) {
     .Properties .container .special_Heading_nav .text {
