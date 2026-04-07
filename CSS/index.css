@@ -466,7 +466,9 @@ a {
 }
 @media(max-width: 991px) {
     .company_overview .container .content .stats {
-        gap: 50px;
+        gap: 40px;
+        width: 100%;
+        max-width: 100%;
     }
 }
 .company_overview .container .content .stats .stat_box span{
@@ -603,6 +605,9 @@ a {
 .Properties .special_Heading p {
     font-size: 20px;
     margin-bottom: 100px;
+}
+.Properties .special_Heading_nav p {
+    white-space: wrap;
 }
 .Properties .container {
     background-color: var(--secound-section-color);
