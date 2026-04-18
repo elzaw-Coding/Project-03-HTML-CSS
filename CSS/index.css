@@ -23,7 +23,7 @@
 :root {
     --main-color: #4B93ff;
     --section-color: #1C2D49;
-    --secound-section-color: #F5F8FE;
+    --second-section-color: #F5F8FE;
     --transition: 0.5s;
     --main-border-radius: 20px;
     --padding-section: 60px
@@ -391,7 +391,7 @@ a {
     grid-template-areas: "img img img img cont cont cont cont cont cont cont cont cont cont cont cont";
     gap: 40px;
     padding: 15px;
-    background-color: var(--secound-section-color);
+    background-color: var(--second-section-color);
     border-radius: var(--main-border-radius);
     align-items: center;
 }
@@ -622,7 +622,7 @@ a {
     margin-bottom: 100px;
 }
 .Properties .container {
-    background-color: var(--secound-section-color);
+    background-color: var(--second-section-color);
     padding: 40px 15px;
     border-radius: var(--main-border-radius);
     -webkit-border-radius: var(--main-border-radius);
@@ -1135,6 +1135,7 @@ a {
         scroll-snap-type:x mandatory;
         gap: 20px;
         padding-bottom: 15px;
+        touch-action: pan-x
     }
     .testmonials .container .testimonials_cards .card {
         min-width: 100%; 
@@ -1225,7 +1226,7 @@ a {
     transition: var(--transition);
 }
 .testmonials .container .image_slider .fa-arrow-left {
-    background-color: var(--secound-section-color);
+    background-color: var(--second-section-color);
     color: var(--section-color);
 }
 .testmonials .container .image_slider .fa-arrow-right {
@@ -1238,7 +1239,7 @@ a {
 .questions_section {
     padding-top: var(--padding-section);
     padding-bottom: var(--padding-section);
-    background-color: var(--secound-section-color);
+    background-color: var(--second-section-color);
 }
 .questions_section .container .questions_box {
     margin-top: 100px;
@@ -1542,7 +1543,7 @@ a {
     transition: var(--transition);
 }
 .blog .container .image_slider .fa-arrow-left {
-    background-color: var(--secound-section-color);
+    background-color: var(--second-section-color);
     color: var(--section-color);
 }
 .blog .container .image_slider .fa-arrow-right {
@@ -1778,6 +1779,5 @@ a {
 }
 .footer .container .copyrights span a {
     color: var(--main-color);
-
 }
 /** End Footer */
