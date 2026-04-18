@@ -1115,12 +1115,8 @@ a {
     gap: 20px;
     flex-wrap: nowrap;
 }
-@media(max-width: 1199px) {
-    .testmonials .container .testimonials_cards {
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
+.testmonials .container .testimonials_cards::-webkit-scrollbar {
+    display: none;
 }
 .testmonials .container .testimonials_cards .card {
     -o-border-radius: 20px;
@@ -1132,9 +1128,19 @@ a {
     -ms-border-radius: 20px;
     min-width: 380px;
 }
-@media(max-width: 330px) {
+@media (max-width: 767px) {
+    .testmonials .container .testimonials_cards {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type:x mandatory;
+        gap: 20px;
+        padding-bottom: 15px;
+    }
     .testmonials .container .testimonials_cards .card {
-        min-width: 285px;
+        min-width: 100%; 
+        max-width: 100%;
+        flex-shrink: 0;
+        scroll-snap-align: start; 
     }
 }
 .testmonials .container .testimonials_cards .card .stars {
@@ -1414,9 +1420,16 @@ a {
     flex-wrap: nowrap; 
     transition: var(--transition);
 }
+.blog .container .images_container::-webkit-scrollbar {
+    display: none;
+}
 @media(max-width: 991px) {
     .blog .container .images_container {
-        overflow: hidden;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 15px;
     }
 }
 .blog .container .images_container .image_box {
@@ -1447,7 +1460,10 @@ a {
 }
 @media(max-width: 991px) {
     .blog .container .images_container .image_box {
-        flex: none; 
+        min-width: 100%;
+        max-width: 100%;
+        flex-shrink: 0;
+        scroll-snap-align: start;
         height: 350px; 
     }
     .blog .container .images_container .image_box::before {
